@@ -1,0 +1,3 @@
+# Answer for the regex exercise:
+
+regex_email = "[a-zA-Z]+@gmail\\.com(\\.br)?"
