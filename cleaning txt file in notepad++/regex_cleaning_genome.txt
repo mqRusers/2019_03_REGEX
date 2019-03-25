@@ -1,0 +1,4 @@
+replace " +" by "" - delete spaces
+replace "\d+" by "" (nothing) - delete numbers
+replace "\r\n" by "" - delete formatting and line breaks
+
