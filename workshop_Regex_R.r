@@ -393,7 +393,7 @@ new_string = "More information can be sent to my emails redkoala@gmail.com.br or
 
 # Create a regex to match both email addresses at the same time.
 
-regex_email = YOUR CODE HERE
+regex_email = "YOUR CODE HERE"
 
 # Test the regex running the following command:
 
@@ -401,9 +401,9 @@ regmatches (new_string,gregexpr(regex_email,new_string))
 
 # ANY SUGGESTIONS OF EXERCISES?
 
-string_test = YOUR STRING HERE
+string_test = "YOUR STRING HERE"
 
-regex = YOUR REGEX HERE
+regex = "YOUR REGEX HERE"
 
 regmatches (string_test,gregexpr(regex,string_test))
 
@@ -436,12 +436,12 @@ genome_split = str_split(string = genome, pattern = "",simplify = TRUE)
 
 str(genome_split)
 
-# bases counting
+# bases counting - bottleneck of the script, since it takes some time
 counting = table(genome_split)
 counting
 
 # bases proportion
-proportion = 100* table(genome_split)/sum(table(genome_split))
+proportion = 100* counting /sum(counting)
 proportion
 
 # counting cut points of DNA used to reduplicate DNA
