@@ -345,8 +345,6 @@ regex = "[[:punct:]]"
 regmatches (string5,gregexpr(regex,string5))
 
 
-# CHECK THIS LATER - FIX IT
-
 # matching only the first match with regexpr
 regmatches (string4,regexpr("she",string4))
 
@@ -393,7 +391,7 @@ new_string = "More information can be sent to my emails redkoala@gmail.com.br or
 
 # Create a regex to match both email addresses at the same time.
 
-regex_email = "YOUR CODE HERE"
+regex_email = "[a-zA-Z]+@gmail\\.com(\\.br)?"
 
 # Test the regex running the following command:
 
@@ -719,10 +717,10 @@ coccus [,1]
 
 # all bacteria names
 
-bact_names = regmatches (data, gregexpr(regex, data))
-bact_names = unlist(matches)
+bact_names = regmatches (organisms, gregexpr(regex, organisms))
+bact_names = unlist(bact_names)
 bact_names
-matches [matches != ""]
+
 
 
 
